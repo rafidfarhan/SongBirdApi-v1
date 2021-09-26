@@ -1,71 +1,40 @@
 const mongoose = require("mongoose");
+const slugify = require("slugify");
 
 const TrackSchema = new mongoose.Schema(
   {
-    trackName: {
+    title: {
       type: String,
       required: true,
       min: 3,
       max: 300,
-      unique: true,
+      unique: true
     },
 
     slug :String ,
 
-    albumType:{
-        type: String,
-        required: true,
-        max: 15,
+    album:{
+        type: mongoose.Schema.ObjectId,
+        ref:'Album',
+        required: true
     },
-
-    albumTitle:{
-        type: String,
-        required: true,
-        max: 80,
-    },
-
-
-    artist: {
-      type: String,
-      required: true,
-      max: 60,
-    },
-
-    genre: {
-        type: String,
-        required: true,
-        enum: [
-          'Rock',
-          'Pop',
-          'Country',
-          'Folk',
-          'Jazz',
-          'Indie',
-          'Electro-pop',
-          'Hip-hop'
-        ],
-        max: 60,
-    },
-
-
-    albumArtUrl: {
-        type: String,
-    },
-
+    
     streamUrl:{
         type: String,
-        required: true,
-    },
-    releaseDate:{
-        type: String,
-        required: true,
+        required: true
     },
     duration :{
         type: Number,
-        required: true,
+        required: true
     }
 
   }
 );
+
+TrackSchema.pre('save',function(next) {
+  this.slug = slugify(this.title,{lower:true});
+  next();
+});
+
 
 module.exports = mongoose.model("Track", TrackSchema );

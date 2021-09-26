@@ -1,0 +1,31 @@
+[
+	{
+        "title": "Eraser",
+        "album": "61503a62b7a41495d136ff36",
+        "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FEd%20Sheeran%20Divide%2F01%20-%20Eraser.mp3?alt=media&token=b25b08b0-7c67-4253-befd-7fbf7ab29e77",
+        "duration": 227
+        },
+        
+        {
+        "title": "Castle on the Hill",
+        "album": "61503a62b7a41495d136ff36",
+        "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FEd%20Sheeran%20Divide%2F02%20-%20Castle%20on%20the%20Hill.mp3?alt=media&token=b1ac5308-eb3e-4c0c-bc63-82bf8bde89b9",
+        "duration": 261
+        },
+        
+	{
+        "title": "Dive",
+        "album": "61503a62b7a41495d136ff36",
+        "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FEd%20Sheeran%20Divide%2F03%20-%20Dive.mp3?alt=media&token=68e086b7-6b02-4ca8-913f-77a3bee7faa0",
+        "duration": 238
+	},
+	
+	{
+        "title": "Cry",
+        "album": "61503b3df9a1f689d149f536",
+        "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FAnne%20Marie%20Speak%20your%20mind%2F01.%20Cry.mp3?alt=media&token=a56f4dcc-122c-4c36-b746-910d0a14d3cf",
+        "duration": 215
+	}
+
+
+]

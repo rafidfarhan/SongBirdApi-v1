@@ -15,7 +15,7 @@ exports.createTrack = asyncHandler(async (req,res,next) =>{
 
 exports.getTrack = asyncHandler(async (req,res,next) =>{
     
-        const track = await Track.findById(req.params.id);
+        const track = await Track.findById(req.params.id).populate('album');
         if (!track){
             next(new ErrorResponse (`Track with id of ${req.params.id} not found`,404));
         }
@@ -25,8 +25,16 @@ exports.getTrack = asyncHandler(async (req,res,next) =>{
 });
 
 exports.getTracks = asyncHandler(async (req,res,next) =>{
+    let query;
+
+    if(req.params.albumId){
+        query = Track.find({album: req.params.albumId}).populate('album');
+    }
+    else{
+        query = Track.find().populate('album');
+    }
     
-        const tracks = await Track.find();
+        const tracks = await query;
         res.status(200).json({success: true,count : tracks.length ,data: tracks});
 });
 

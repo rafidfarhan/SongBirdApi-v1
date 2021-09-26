@@ -1,7 +1,7 @@
 const express = require("express");
 const {getTrack,getTracks, createTrack,updateTrack,deleteTrack} = require("../controllers/tracks");
 
-const router = express.Router();
+const router = express.Router({mergeParams: true});
 
 router.route('/').post(createTrack);
 router.route('/').get(getTracks);

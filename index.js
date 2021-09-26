@@ -8,6 +8,8 @@ dotenv.config({path : "./config/config.env"});
 
 const connectDB = require("./config/db"); 
 const tracksRoute = require("./routes/tracks");
+const albumsRoute = require("./routes/albums");
+const artistsRoute = require("./routes/artists");
 const errorHandler = require("./middleware/error");
 //mongoose Database connection
 connectDB();
@@ -25,6 +27,8 @@ if(process.env.NODE_ENV === "development"){
 
 
 app.use("/api/v1/tracks", tracksRoute);
+app.use("/api/v1/albums", albumsRoute);
+app.use("/api/v1/artists", artistsRoute);
 app.use(errorHandler);
 
 
