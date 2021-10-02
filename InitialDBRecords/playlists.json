@@ -1,0 +1,12 @@
+[
+	{
+        "name": "My Morning Playlist",
+        "playlistType":"Featured",
+        "tracks": ["61503c7cf9a1f689d149f53f","61503c95f9a1f689d149f543"]
+	},
+	{
+        "name": "My Evening Playlist",
+        "playlistType":"Featured",
+        "tracks": ["61503bb8f9a1f689d149f53b","61503c8bf9a1f689d149f541"]
+	}
+]

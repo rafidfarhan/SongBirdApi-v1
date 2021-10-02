@@ -1,12 +1,22 @@
 const express = require("express");
-const {getArtist,getArtists, createArtist,updateArtist,deleteArtist} = require("../controllers/artists");
+const {getArtist,getArtists, createArtist,updateArtist,deleteArtist,followArtist,unfollowArtist } = require("../controllers/artists");
+
+const advancedResults = require('../middleware/advancedResults');
+const { protect, authorize } = require('../middleware/auth');
+const Artist = require('../models/artistModel');
 
 const router = express.Router();
 
-router.route('/').post(createArtist);
-router.route('/').get(getArtists);
+router.use(protect);
 
+router.route('/').get(advancedResults(Artist),getArtists);
 router.route('/:id').get(getArtist);
+router.route('/:id/follow').put(followArtist);
+router.route('/:id/unfollow').put(unfollowArtist);
+
+router.use(authorize('admin'));
+
+router.route('/').post(createArtist);
 router.route('/:id').put(updateArtist);
 router.route('/:id').delete(deleteArtist);
 

@@ -26,17 +26,43 @@ const ArtistSchema = new mongoose.Schema(
         type:String
     },
 
+    facebookUrl : {
+      type:String,
+      default: null
+    },
+    instagramUrl : {
+    type:String,
+    default: null
+  },
+  twitterUrl : {
+    type:String,
+    default: null
+  },
+  youtubeUrl : {
+    type:String,
+    default: null
+  },
+  topArtist:{
+    type: Boolean,
+    default: false
+  },
+
+
     // albums:{
     //     type: [mongoose.Schema.ObjectId],
     //     ref:'Album',
     //     required: true
     // },
 
-    follower_count :{
-        type: Number,
-        default: 0
-
-    },
+    followers :  [{
+      type: mongoose.Schema.ObjectId,
+      ref:'User',
+      default: []
+    }],
+    createdAt: {
+      type: Date,
+      default: Date.now,
+  }
 
   }, {
     toJSON: {virtuals :true},

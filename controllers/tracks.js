@@ -68,3 +68,60 @@ exports.deleteTrack = asyncHandler(async (req,res,next) =>{
         }      
     
 });
+
+exports.likeTrack = asyncHandler(async (req,res,next) =>{
+    
+    const track = await Track.findById(req.params.id);
+    const user = req.user;
+    
+    if (!track){
+        next(new ErrorResponse (`Track with id of ${req.params.id} not found`,404));
+    }
+    else{
+        if (!user.likedSongs.includes(track.id)) {
+            await user.updateOne({ $push: { likedSongs: req.params.id } });
+            res.status(200).json({success: true,message: 'Song has been liked'});
+          } else {
+            res.status(403).json({success: false,message:"Song already liked by this user"});
+          }
+       
+       
+
+    }      
+
+});
+
+exports.removeLikedTrack = asyncHandler(async (req,res,next) =>{
+    
+    const track = await Track.findById(req.params.id);
+    const user = req.user;
+    
+    if (!track){
+        next(new ErrorResponse (`Track with id of ${req.params.id} not found`,404));
+    }
+    else{
+        if (user.likedSongs.includes(track.id)) {
+            await user.updateOne({ $pull: { likedSongs: req.params.id } });
+            res.status(200).json({success: true,message: 'Like removed from song'});
+          } else {
+            res.status(403).json({success: false,message:"Song was not liked by user"});
+          }
+       
+       
+
+    }      
+
+});
+exports.getLikedTracks= asyncHandler(async (req,res,next) =>{
+    
+    const user = req.user;
+    const tracks = await Promise.all(
+        user.likedSongs.map((trackId) => {
+          return Track.findById(trackId).populate('album')
+        })
+      );
+    
+  
+    res.status(200).json({success: true, data: tracks});
+    
+  });

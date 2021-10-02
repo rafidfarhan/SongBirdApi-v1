@@ -2,18 +2,18 @@
 	{
         "title": "Speak Your Mind",
         "albumType":"Standard",
-        "artists": ["61504e2f39f7934e9b7db73f"],
+        "artists": ["6154b25b120697b70393e8f7"],
         "genre": "Pop",
         "albumArtUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FAnne%20Marie%20Speak%20your%20mind%2FCover.jpg?alt=media&token=49622a06-3f51-4ce9-9afc-e4240e588a86",
-        "releaseDate": "27-4-2018"
+        "releaseDate": "2018-04-27"
 	},
 	{
         "title": "÷(Deluxe)",
         "albumType":"Standard",
-        "artists": ["614f70321b9c28f5238a715c"],
+        "artists": ["6154b24d120697b70393e8f4"],
         "genre": "Pop",
         "albumArtUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FEd%20Sheeran%20Divide%2FEd%20Sheeran%20-%20%C3%B7%20(Divide)%20(Deluxe)%20(2017).jpg?alt=media&token=3d957df6-2f58-40ce-a5f2-dd66e20e8e30" ,
-        "releaseDate": "3-3-2017"
+        "releaseDate": "2017-03-03"
 	}
 
 

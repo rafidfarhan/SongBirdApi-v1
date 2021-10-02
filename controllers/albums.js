@@ -33,17 +33,8 @@ exports.getAlbum = asyncHandler(async (req,res,next) =>{
 });
 
 exports.getAlbums = asyncHandler(async (req,res,next) =>{
-    
-        const albums = await Album.find().populate([{
-            path: 'tracks',
-            select : 'title streamUrl duration slug'
-        },
-        {
-            path: 'artists',
-            select : 'name coverUrl profileImgUrl slug'
-        }
-    ]);
-        res.status(200).json({success: true,count : albums.length ,data: albums});
+
+        res.status(200).json(res.advancedResults);
 });
 
 
@@ -78,3 +69,69 @@ exports.deleteAlbum = asyncHandler(async (req,res,next) =>{
         }      
     
 });
+
+exports.saveAlbum = asyncHandler(async (req,res,next) =>{
+    
+    const album = await Album.findById(req.params.id);
+    const user = req.user;
+    
+    if (!album){
+        next(new ErrorResponse (`Album with id of ${req.params.id} not found`,404));
+    }
+    else{
+        if (!user.savedAlbums.includes(album.id)) {
+            await user.updateOne({ $push: { savedAlbums: req.params.id } });
+            res.status(200).json({success: true,message: 'Album saved'});
+          } else {
+            res.status(403).json({success: false,message:"Album already saved by user"});
+          }
+       
+    }      
+
+});
+
+exports.removeSavedAlbum = asyncHandler(async (req,res,next) =>{
+    
+    const album = await Album.findById(req.params.id);
+    const user = req.user;
+    
+    if (!album){
+        next(new ErrorResponse (`Album with id of ${req.params.id} not found`,404));
+    }
+    else{
+        if (user.savedAlbums.includes(album.id)) {
+            await user.updateOne({ $pull: { savedAlbums: req.params.id } });
+            res.status(200).json({success: true,message: 'Album removed from collection'});
+          } else {
+            res.status(403).json({success: false,message:"Album was not saved by user"});
+          }
+       
+       
+
+    }      
+
+});
+
+exports.getSavedAlbums= asyncHandler(async (req,res,next) =>{
+    
+    const user = req.user;
+    const albums = await Promise.all(
+        user.savedAlbums.map((albumId) => {
+          return Album.findById(albumId).populate([{
+            path: 'tracks',
+            select : 'title streamUrl duration slug'
+        },
+        {
+            path: 'artists',
+            select : 'name coverUrl profileImgUrl slug'
+        }
+    ]);
+        })
+      );
+    
+
+    res.status(200).json({success: true, data: albums});
+    
+});
+
+

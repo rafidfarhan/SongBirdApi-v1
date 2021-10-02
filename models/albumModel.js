@@ -20,8 +20,7 @@ const AlbumSchema = new mongoose.Schema(
             'Standard',
             'Single',
             'Mix tape'
-          ],
-        max: 20
+          ]
     },
 
     artists:[{
@@ -42,8 +41,7 @@ const AlbumSchema = new mongoose.Schema(
           'Indie',
           'Electro-pop',
           'Hip-hop'
-        ],
-        max: 60
+        ]
     },
 
 
@@ -52,9 +50,13 @@ const AlbumSchema = new mongoose.Schema(
     },
 
     releaseDate:{
-        type: String,
+        type: Date,
         required: true
     },
+    createdAt: {
+      type: Date,
+      default: Date.now,
+  }
    
 
   }, {
