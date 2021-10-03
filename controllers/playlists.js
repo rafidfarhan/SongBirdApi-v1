@@ -16,10 +16,14 @@ exports.createPlaylist = asyncHandler(async (req,res,next) =>{
 exports.getPlaylist = asyncHandler(async (req,res,next) =>{
     
         const playlist = await Playlist.findById(req.params.id).populate([{
-            path: 'tracks',
-            select : 'title streamUrl duration slug'
-        }
-    ]);
+          path: 'tracks',
+          select : 'title streamUrl duration slug'
+      },
+      {
+          path: 'owner',
+          select : 'username'
+      }
+  ]);
         if (!playlist){
             next(new ErrorResponse (`Playlist with id of ${req.params.id} not found`,404));
         }
@@ -31,10 +35,14 @@ exports.getPlaylist = asyncHandler(async (req,res,next) =>{
 exports.getPlaylists = asyncHandler(async (req,res,next) =>{
     
         const playlists = await Playlist.find().populate([{
-            path: 'tracks',
-            select : 'title streamUrl duration slug'
-        }
-    ]);
+          path: 'tracks',
+          select : 'title streamUrl duration slug'
+      },
+      {
+          path: 'owner',
+          select : 'username'
+      }
+  ]);
         res.status(200).json({success: true,count : playlists.length ,data: playlists});
 });
 

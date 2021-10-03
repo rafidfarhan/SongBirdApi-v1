@@ -18,6 +18,7 @@ const albumsRoute = require("./routes/albums");
 const artistsRoute = require("./routes/artists");
 const playlistsRoute = require("./routes/playlists");
 const usersRoute = require("./routes/users");
+const searchRoute = require("./routes/search");
 
 const errorHandler = require("./middleware/error");
 //mongoose Database connection
@@ -48,6 +49,7 @@ app.use("/api/v1/albums", albumsRoute);
 app.use("/api/v1/artists", artistsRoute);
 app.use("/api/v1/playlists", playlistsRoute);
 app.use("/api/v1/users", usersRoute);
+app.use("/api/v1/search", searchRoute);
 app.use(errorHandler);
 
 
