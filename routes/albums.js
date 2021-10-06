@@ -6,7 +6,8 @@ const {getAlbum,
     deleteAlbum,
     saveAlbum,
     removeSavedAlbum,
-    getSavedAlbums
+    getSavedAlbums,
+    getTimelineAlbums
 } = require("../controllers/albums");
 
 const advancedResults = require('../middleware/advancedResults');
@@ -34,6 +35,7 @@ router.route('/').get(advancedResults(Album,[{
 ]),getAlbums);
 
 router.route('/savedalbums').get(getSavedAlbums);
+router.route('/timeline').get(getTimelineAlbums);
 router.route('/:id').get(getAlbum);
 
 

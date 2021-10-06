@@ -25,7 +25,7 @@ const ArtistSchema = new mongoose.Schema(
     profileImgUrl : {
         type:String
     },
-
+    
     facebookUrl : {
       type:String,
       default: null
@@ -48,11 +48,11 @@ const ArtistSchema = new mongoose.Schema(
   },
 
 
-    // albums:{
-    //     type: [mongoose.Schema.ObjectId],
-    //     ref:'Album',
-    //     required: true
-    // },
+    albums:{
+        type: [mongoose.Schema.ObjectId],
+        ref:'Album',
+        default: []
+    },
 
     followers :  [{
       type: mongoose.Schema.ObjectId,
@@ -84,12 +84,12 @@ ArtistSchema.pre('save',function(next) {
 
 //Reverse Populate
 
-ArtistSchema.virtual('albums', {
-  ref: 'Album',
-  localField: '_id',
-  foreignField: 'artists',
-  justOne: false
-})
+// ArtistSchema.virtual('albums', {
+//   ref: 'Album',
+//   localField: '_id',
+//   foreignField: 'artists',
+//   justOne: false
+// })
 
 
 module.exports = mongoose.model("Artist", ArtistSchema );

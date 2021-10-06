@@ -8,6 +8,8 @@ const hpp = require("hpp");
 const morgan = require("morgan");
 const cookieParser = require("cookie-parser");
 const mongoSanitize = require("express-mongo-sanitize");
+const fileUpload = require("express-fileupload");
+const path = require("path"); 
 
 dotenv.config({path : "./config/config.env"});
 
@@ -35,6 +37,9 @@ app.use(cookieParser());
 if(process.env.NODE_ENV === "development"){
     app.use(morgan("dev"));
 }
+
+app.use(fileUpload());
+
 app.use(mongoSanitize());
 app.use(helmet());
 app.use(xss());
@@ -42,6 +47,9 @@ app.use(xss());
 
 app.use(hpp());
 app.use(cors());
+
+//Set static folder
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use("/api/v1/auth", authRoute);
 app.use("/api/v1/tracks", tracksRoute);

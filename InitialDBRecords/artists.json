@@ -7,7 +7,8 @@
 		"facebookUrl": "https://www.facebook.com/EdSheeranMusic",
 		"instagramUrl":"https://www.instagram.com/teddysphotos/",
 		"twitterUrl":"https://twitter.com/edsheeran",
-		"youtubeUrl": "https://www.youtube.com/c/EdSheeran"
+		"youtubeUrl": "https://www.youtube.com/c/EdSheeran",
+		"albums": ["6154b2bc2d9b9a48220bd696"]
 	},
 	{
 		"name": "Anne-Marie",
@@ -17,6 +18,7 @@
 		"facebookUrl": "https://www.facebook.com/iamannemarie",
 		"instagramUrl":"https://www.instagram.com/annemarie/",
 		"twitterUrl":"https://twitter.com/AnneMarie",
-		"youtubeUrl": "https://www.youtube.com/channel/UCBL7ZxVX4GvW4CFiES_-0YA"
+		"youtubeUrl": "https://www.youtube.com/channel/UCBL7ZxVX4GvW4CFiES_-0YA",
+		"albums": ["6154b3452d9b9a48220bd699"]
 	}
 ]

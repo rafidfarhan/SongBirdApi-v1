@@ -3,6 +3,7 @@ const ErrorResponse = require("../utils/errorResponse");
 const sendEmail = require("../utils/sendEmail");
 const asyncHandler = require("../middleware/async");
 const crypto = require("crypto");
+const path = require('path');
 
 
 exports.register = asyncHandler(async (req,res,next) =>{
@@ -81,6 +82,49 @@ exports.getMe = asyncHandler(async (req, res, next) => {
       data: user,
     });
   });
+
+  exports.profileImageUpload = asyncHandler(async (req, res, next) => {
+    const user = await User.findById(req.user.id);
+  
+    if (!req.files) {
+      return next(new ErrorResponse(`Please upload a file`, 400));
+    }
+  
+    const file = req.files.file;
+  
+    // Make sure the image is a photo
+    if (!file.mimetype.startsWith('image')) {
+      return next(new ErrorResponse(`Please upload an image file`, 400));
+    }
+  
+    // Check filesize
+    if (file.size > process.env.MAX_FILE_UPLOAD) {
+      return next(
+        new ErrorResponse(
+          `Please upload an image less than ${process.env.MAX_FILE_UPLOAD}`,
+          400
+        )
+      );
+    }
+  
+    // Create custom filename
+    file.name = `photo_${user._id}${path.parse(file.name).ext}`;
+  
+    file.mv(`${process.env.FILE_UPLOAD_PATH_PROFILE_PIC}/${file.name}`, async err => {
+      if (err) {
+        console.error(err);
+        return next(new ErrorResponse(`Problem with file upload`, 500));
+      }
+  
+      await User.findByIdAndUpdate(req.user.id, { profilePicture: file.name });
+  
+      res.status(200).json({
+        success: true,
+        data: file.name
+      });
+    });
+  });
+
 
   exports.updatePassword = asyncHandler(async (req, res, next) => {
     const user = await User.findById(req.user.id).select('+password');

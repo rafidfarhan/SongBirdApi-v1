@@ -1,6 +1,7 @@
 const Playlist = require("../models/playlistModel");
 const ErrorResponse = require("../utils/errorResponse");
 const asyncHandler = require("../middleware/async");
+const path = require('path');
 
 exports.createPlaylist = asyncHandler(async (req,res,next) =>{
     req.body.owner = req.user.id;
@@ -33,18 +34,82 @@ exports.getPlaylist = asyncHandler(async (req,res,next) =>{
 });
 
 exports.getPlaylists = asyncHandler(async (req,res,next) =>{
+  
+  const playlists = await Playlist.find().populate([{
+      path: 'tracks',
+      select : 'title streamUrl duration slug'
+  },
+  {
+      path: 'owner',
+      select : 'username'
+  }
+]);
     
-        const playlists = await Playlist.find().populate([{
-          path: 'tracks',
-          select : 'title streamUrl duration slug'
-      },
-      {
-          path: 'owner',
-          select : 'username'
-      }
-  ]);
         res.status(200).json({success: true,count : playlists.length ,data: playlists});
 });
+
+
+exports.getFeaturedPlaylists = asyncHandler(async (req,res,next) =>{
+  
+  let query =  Playlist.find({ playlistType: { $eq: 'Featured' } }).populate([{
+      path: 'tracks',
+      select : 'title streamUrl duration slug'
+  },
+  {
+      path: 'owner',
+      select : 'username'
+  }
+]);
+
+// Select Fields
+if (req.query.select) {
+  const fields = req.query.select.split(',').join(' ');
+  query = query.select(fields);
+}
+
+// Sort
+if (req.query.sort) {
+  const sortBy = req.query.sort.split(',').join(' ');
+  query = query.sort(sortBy);
+} else {
+  query = query.sort('-createdAt');
+}
+
+// Pagination
+const page = parseInt(req.query.page, 10) || 1;
+const limit = parseInt(req.query.limit, 10) || 12;
+const startIndex = (page - 1) * limit;
+const endIndex = page * limit;
+const total = await Playlist.countDocuments({ playlistType: { $eq: 'Featured' } });
+
+query = query.skip(startIndex).limit(limit);
+
+// Executing query
+const playlists = await query;
+
+// Pagination result
+const pagination = {};
+
+if (endIndex < total) {
+  pagination.next = {
+    page: page + 1,
+    limit
+  };
+}
+
+if (startIndex > 0) {
+  pagination.prev = {
+    page: page - 1,
+    limit
+  };
+}
+ 
+        res.status(200).json({success: true,count : playlists.length , pagination, data: playlists});
+});
+
+
+
+
 
 
 exports.updatePlaylist = asyncHandler(async (req, res, next) => {
@@ -141,6 +206,65 @@ exports.updatePlaylist = asyncHandler(async (req, res, next) => {
 
    
   });
+
+  exports.playlistImageUpload = asyncHandler(async (req, res, next) => {
+    const user = req.user;
+    const playlist = await Playlist.findById(req.params.id);
+  
+    if (!playlist) {
+      return next(
+        new ErrorResponse(`Playlist with id of ${req.params.id} not found`, 404)
+      );
+    }
+    // Make sure user is playlist owner
+  if (playlist.owner.toString() !== req.user.id && req.user.role !== 'admin') {
+    return next(
+      new ErrorResponse(
+        `User ${req.user.id} is not authorized to update this playlist`,
+        401
+      )
+    );
+  }
+  
+    if (!req.files) {
+      return next(new ErrorResponse(`Please upload a file`, 400));
+    }
+  
+    const file = req.files.file;
+  
+    // Make sure the image is a photo
+    if (!file.mimetype.startsWith('image')) {
+      return next(new ErrorResponse(`Please upload an image file`, 400));
+    }
+  
+    // Check file size
+    if (file.size > process.env.MAX_FILE_UPLOAD) {
+      return next(
+        new ErrorResponse(
+          `Please upload an image less than ${process.env.MAX_FILE_UPLOAD}`,
+          400
+        )
+      );
+    }
+  
+    // Create custom filename
+    file.name = `photo_${playlist._id}${path.parse(file.name).ext}`;
+  
+    file.mv(`${process.env.FILE_UPLOAD_PATH_PLAYLIST_PIC}/${file.name}`, async err => {
+      if (err) {
+        console.error(err);
+        return next(new ErrorResponse(`Problem with file upload`, 500));
+      }
+  
+      await Playlist.findByIdAndUpdate(req.user.id, { picture: file.name });
+  
+      res.status(200).json({
+        success: true,
+        data: file.name
+      });
+    });
+  });
+
 
 
   exports.deletePlaylist = asyncHandler(async (req, res, next) => {

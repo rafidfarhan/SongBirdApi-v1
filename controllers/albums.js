@@ -1,4 +1,5 @@
 const Album = require("../models/albumModel");
+const Artist = require("../models/artistModel");
 const ErrorResponse = require("../utils/errorResponse");
 const asyncHandler = require("../middleware/async");
 
@@ -35,6 +36,20 @@ exports.getAlbum = asyncHandler(async (req,res,next) =>{
 exports.getAlbums = asyncHandler(async (req,res,next) =>{
 
         res.status(200).json(res.advancedResults);
+});
+
+exports.getTimelineAlbums = asyncHandler(async (req,res,next) =>{
+    const user = req.user;
+    const artists = user.following;
+    let albums = [];
+
+    for (let i = 0; i < artists.length; i++) {
+        const artist = await Artist.findById(artists[i]).populate('albums');
+        const albumsOfArtist = artist.albums;
+        albums.push(albumsOfArtist);
+      }
+
+    res.status(200).json({success: true,count : albums.length, data: albums});
 });
 
 

@@ -10,7 +10,10 @@ const {
     savePlaylist,
     removeSavedPlaylist,
     getSavedPlaylists,
-    getCreatedPlaylists
+    getCreatedPlaylists,
+    playlistImageUpload,
+    getFeaturedPlaylists
+   
 
 } = require("../controllers/playlists");
 const {protect} = require("../middleware/auth");
@@ -19,8 +22,12 @@ const router = express.Router();
 
 router.post('/',protect,createPlaylist);
 router.route('/').get(getPlaylists);
+
 router.get('/savedplaylists', protect,getSavedPlaylists);
+
+router.get('/featured', protect,getFeaturedPlaylists);
 router.get('/myplaylists', protect,getCreatedPlaylists);
+
 
 router.route('/:id').get(getPlaylist);
 router.put('/:id', protect,updatePlaylist);
@@ -29,6 +36,7 @@ router.put('/removefromplaylist/:id', protect,removeSongToPlaylist);
 
 router.put('/saveplaylist/:id', protect,savePlaylist);
 router.put('/removeplaylistfromlibrary/:id', protect,removeSavedPlaylist);
+router.put('/uploadplaylistimage/:id', protect,playlistImageUpload);
 
 router.delete('/:id',protect, deletePlaylist);
 

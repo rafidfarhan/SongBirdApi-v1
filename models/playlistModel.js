@@ -28,6 +28,10 @@ const PlaylistSchema = new mongoose.Schema(
         ref:'User',
         required: true
       },
+      picture: {
+        type: String,
+        default: null
+      },
 
     createdAt: {
         type: Date,
