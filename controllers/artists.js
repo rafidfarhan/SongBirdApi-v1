@@ -26,8 +26,9 @@ exports.getArtist = asyncHandler(async (req,res,next) =>{
 
 exports.getArtists = asyncHandler(async (req,res,next) =>{
     
-    const artists = await Artist.find().populate('albums');
-    res.status(200).json({success: true,count : artists.length ,data: artists});
+    // const artists = await Artist.find().populate('albums');
+    // res.status(200).json({success: true,count : artists.length ,data: artists});
+    res.status(200).json(res.advancedResults);
 });
 
 

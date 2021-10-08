@@ -9,7 +9,11 @@ const router = express.Router();
 
 router.use(protect);
 
-router.route('/').get(advancedResults(Artist),getArtists);
+router.route('/').get(advancedResults(Artist,[{
+    path: 'albums',
+    select : 'title albumType artists genre albumUrl releaseDate slug'
+}
+]),getArtists);
 router.route('/:id').get(getArtist);
 router.route('/:id/follow').put(followArtist);
 router.route('/:id/unfollow').put(unfollowArtist);

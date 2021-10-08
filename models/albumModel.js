@@ -40,6 +40,7 @@ const AlbumSchema = new mongoose.Schema(
           'Jazz',
           'Indie',
           'Electro-pop',
+          'Orchestral-pop',
           'Hip-hop'
         ]
     },

@@ -1,4 +1,6 @@
 const express = require("express");
+const advancedResults = require('../middleware/advancedResults');
+const Playlist = require('../models/playlistModel');
 const {
     createPlaylist,
     getPlaylist,
@@ -21,7 +23,16 @@ const {protect} = require("../middleware/auth");
 const router = express.Router();
 
 router.post('/',protect,createPlaylist);
-router.route('/').get(getPlaylists);
+
+router.route('/').get(advancedResults(Playlist,[{
+    path: 'tracks',
+    select : 'title streamUrl duration slug'
+},
+{
+    path: 'owner',
+    select : 'username'
+}
+]),getPlaylists);
 
 router.get('/savedplaylists', protect,getSavedPlaylists);
 

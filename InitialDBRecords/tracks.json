@@ -1,31 +1,452 @@
 [
 	{
-        "title": "Eraser",
-        "album": "61503a62b7a41495d136ff36",
-        "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FEd%20Sheeran%20Divide%2F01%20-%20Eraser.mp3?alt=media&token=b25b08b0-7c67-4253-befd-7fbf7ab29e77",
-        "duration": 227
+                "title": "Eraser",
+                "album": "615ea1fd2c2e4283d032048b",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FEd%20Sheeran%20Divide%2F01%20-%20Eraser.mp3?alt=media&token=b25b08b0-7c67-4253-befd-7fbf7ab29e77",
+                "duration": 227
         },
         
         {
-        "title": "Castle on the Hill",
-        "album": "61503a62b7a41495d136ff36",
-        "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FEd%20Sheeran%20Divide%2F02%20-%20Castle%20on%20the%20Hill.mp3?alt=media&token=b1ac5308-eb3e-4c0c-bc63-82bf8bde89b9",
-        "duration": 261
+                "title": "Castle on the Hill",
+                "album": "615ea1fd2c2e4283d032048b",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FEd%20Sheeran%20Divide%2F02%20-%20Castle%20on%20the%20Hill.mp3?alt=media&token=b1ac5308-eb3e-4c0c-bc63-82bf8bde89b9",
+                "duration": 261
         },
         
 	{
-        "title": "Dive",
-        "album": "61503a62b7a41495d136ff36",
-        "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FEd%20Sheeran%20Divide%2F03%20-%20Dive.mp3?alt=media&token=68e086b7-6b02-4ca8-913f-77a3bee7faa0",
-        "duration": 238
-	},
-	
+                "title": "Dive",
+                "album": "615ea1fd2c2e4283d032048b",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FEd%20Sheeran%20Divide%2F03%20-%20Dive.mp3?alt=media&token=68e086b7-6b02-4ca8-913f-77a3bee7faa0",
+                "duration": 238
+        },
+
+        {
+                "title": "Shape of You",
+                "album": "615ea1fd2c2e4283d032048b",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FEd%20Sheeran%20Divide%2F04%20-%20Shape%20of%20You.mp3?alt=media&token=02845e9b-ff66-468c-8ec9-f840cbb2f838",
+                "duration": 233
+        },
+        {
+                "title": "Perfect",
+                "album": "615ea1fd2c2e4283d032048b",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FEd%20Sheeran%20Divide%2F05%20-%20Perfect.mp3?alt=media&token=ee4a4a14-b258-4d91-90f8-cee0f684129b",
+                "duration": 263
+        },
+        {
+                "title": "Galway Girl",
+                "album": "615ea1fd2c2e4283d032048b",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FEd%20Sheeran%20Divide%2F06%20-%20Galway%20Girl.mp3?alt=media&token=83242f71-76d9-4b47-9c40-51e679fcba91",
+                "duration": 170
+        },
+        {
+                "title": "Happier",
+                "album": "615ea1fd2c2e4283d032048b",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FEd%20Sheeran%20Divide%2F07%20-%20Happier.mp3?alt=media&token=10d4a938-ef63-4b51-9d28-1782d9d37c20",
+                "duration": 207
+        },
+        {
+                "title": "New Man",
+                "album": "615ea1fd2c2e4283d032048b",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FEd%20Sheeran%20Divide%2F08%20-%20New%20Man.mp3?alt=media&token=c1d5ce33-45a2-4d1c-a353-cbe0fe26943a",
+                "duration": 189
+        },
+        {
+                "title": "Hearts Don't Break Around Here",
+                "album": "615ea1fd2c2e4283d032048b",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FEd%20Sheeran%20Divide%2F09%20-%20Hearts%20Don't%20Break%20Around%20Here.mp3?alt=media&token=320ad437-a963-4daf-8d56-7419745eb9d6",
+                "duration": 248
+        },
+        {
+                "title": "What Do I Know",
+                "album": "615ea1fd2c2e4283d032048b",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FEd%20Sheeran%20Divide%2F10%20-%20What%20Do%20I%20Know.mp3?alt=media&token=a2b00061-7f31-4a01-a238-fcf89854d6ea",
+                "duration": 237
+        },
+        {
+                "title": "How Would You Feel (Paean)",
+                "album": "615ea1fd2c2e4283d032048b",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FEd%20Sheeran%20Divide%2F11%20-%20How%20Would%20You%20Feel%20(Paean).mp3?alt=media&token=b7302617-b419-47fb-a009-0c900cdd30e1",
+                "duration": 280
+        },
+        {
+                "title": "Supermarket Flowers",
+                "album": "615ea1fd2c2e4283d032048b",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FEd%20Sheeran%20Divide%2F12%20-%20Supermarket%20Flowers.mp3?alt=media&token=00cb1b6f-002b-4468-8bb5-567bb79b479f",
+                "duration": 221
+        },
+        {
+                "title": "Barcelona",
+                "album": "615ea1fd2c2e4283d032048b",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FEd%20Sheeran%20Divide%2F13%20-%20Barcelona.mp3?alt=media&token=31bddba9-1ea3-4505-aebd-8cc6d75905b7",
+                "duration": 191
+        },
+        {
+                "title": "Bibia Be Ye Ye",
+                "album": "615ea1fd2c2e4283d032048b",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FEd%20Sheeran%20Divide%2F14%20-%20Bibia%20Be%20Ye%20Ye.mp3?alt=media&token=50a20981-4c10-4b68-803d-aff2275c588f",
+                "duration": 176
+        },
+        {
+                "title": "Nancy Mulligan",
+                "album": "615ea1fd2c2e4283d032048b",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FEd%20Sheeran%20Divide%2F15%20-%20Nancy%20Mulligan.mp3?alt=media&token=b554ac06-5346-4328-b5ed-62c6f89d1eb0",
+                "duration": 179
+        },
+        {
+                "title": "Save Myself",
+                "album": "615ea1fd2c2e4283d032048b",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FEd%20Sheeran%20Divide%2F16%20-%20Save%20Myself.mp3?alt=media&token=2182dbba-e2d7-4c90-b731-eef91fd4aedb",
+                "duration": 247
+        },
+        
+        
+        
+
+
+
 	{
-        "title": "Cry",
-        "album": "61503b3df9a1f689d149f536",
-        "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FAnne%20Marie%20Speak%20your%20mind%2F01.%20Cry.mp3?alt=media&token=a56f4dcc-122c-4c36-b746-910d0a14d3cf",
-        "duration": 215
-	}
+                "title": "Cry",
+                "album": "615ea1e62c2e4283d0320487",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FAnne%20Marie%20Speak%20your%20mind%2F01.%20Cry.mp3?alt=media&token=a56f4dcc-122c-4c36-b746-910d0a14d3cf",
+                "duration": 215
+        },
+        {
+                "title": "Ciao Adios",
+                "album": "615ea1e62c2e4283d0320487",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FAnne%20Marie%20Speak%20your%20mind%2F02.%20Ciao%20Adios.mp3?alt=media&token=3030c32f-40ee-4c90-b56b-b4e029b195fd",
+                "duration": 199
+        },
+        {
+                "title": "Alarm",
+                "album": "615ea1e62c2e4283d0320487",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FAnne%20Marie%20Speak%20your%20mind%2F03.%20Alarm.mp3?alt=media&token=75f76653-9e10-448a-9f95-a23ecd2b6add",
+                "duration": 205
+        },
+        {
+                "title": "Trigger",
+                "album": "615ea1e62c2e4283d0320487",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FAnne%20Marie%20Speak%20your%20mind%2F04.%20Trigger.mp3?alt=media&token=7d842437-d26c-4396-b0a6-341aa5be77dc",
+                "duration": 193
+        },
+        {
+                "title": "Then",
+                "album": "615ea1e62c2e4283d0320487",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FAnne%20Marie%20Speak%20your%20mind%2F05.%20Then.mp3?alt=media&token=dfca5ccf-e9d1-41a3-989f-25ef3a0d6c7d",
+                "duration": 214
+        },
+        {
+                "title": "Perfect ",
+                "album": "615ea1e62c2e4283d0320487",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FAnne%20Marie%20Speak%20your%20mind%2F06.%20Perfect.mp3?alt=media&token=2993abe1-0613-43b7-ad46-0e8132142dd0",
+                "duration": 233
+        },
+        {
+                "title": "FRIENDS",
+                "album": "615ea1e62c2e4283d0320487",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FAnne%20Marie%20Speak%20your%20mind%2F07.%20FRIENDS.mp3?alt=media&token=10e542c4-f82e-4f3c-b807-abe738f6e0de",
+                "duration": 202
+        },
+        {
+                "title": "Bad Girlfriend",
+                "album": "615ea1e62c2e4283d0320487",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FAnne%20Marie%20Speak%20your%20mind%2F08.%20Bad%20Girlfriend.mp3?alt=media&token=3ce412e1-ce4d-4974-8a27-0e54f4831790",
+                "duration": 206
+        },
+        {
+                "title": "Heavy",
+                "album": "615ea1e62c2e4283d0320487",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FAnne%20Marie%20Speak%20your%20mind%2F09.%20Heavy.mp3?alt=media&token=858370ce-6806-40e6-863a-2b47eb0d9134",
+                "duration": 172
+        },
+        {
+                "title": "2002",
+                "album": "615ea1e62c2e4283d0320487",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FAnne%20Marie%20Speak%20your%20mind%2F10.%202002.mp3?alt=media&token=79530619-331d-4e84-bc56-3571152c1bc2",
+                "duration": 187
+        },
+        {
+                "title": "Can I Get Your Number",
+                "album": "615ea1e62c2e4283d0320487",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FAnne%20Marie%20Speak%20your%20mind%2F11.%20Can%20I%20Get%20Your%20Number.mp3?alt=media&token=597ac556-f8c6-4f1e-81f7-4be072548d14",
+                "duration": 200
+        },
+        {
+                "title": "Machine",
+                "album": "615ea1e62c2e4283d0320487",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FAnne%20Marie%20Speak%20your%20mind%2F12.%20Machine.mp3?alt=media&token=917d6a2e-3fa5-4d43-b48b-17c9bfed7732",
+                "duration": 247
+        },
+        {
+                "title": "Breathing Fire",
+                "album": "615ea1e62c2e4283d0320487",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FAnne%20Marie%20Speak%20your%20mind%2F13.%20Breathing%20Fire.mp3?alt=media&token=4d37d9fb-efe9-4c81-a2d1-cf13c1d8925f",
+                "duration": 234
+        },
+        {
+                "title": "Some People",
+                "album": "615ea1e62c2e4283d0320487",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FAnne%20Marie%20Speak%20your%20mind%2F13.%20Breathing%20Fire.mp3?alt=media&token=4d37d9fb-efe9-4c81-a2d1-cf13c1d8925f",
+                "duration": 191
+        },
+        {
+                "title": "Used to Love You",
+                "album": "615ea1e62c2e4283d0320487",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FAnne%20Marie%20Speak%20your%20mind%2F15.%20Used%20to%20Love%20You.mp3?alt=media&token=7efd7184-6f53-4616-9323-ec225d27a7d0",
+                "duration": 249
+        },
+        {
+                "title": "Peak",
+                "album": "615ea1e62c2e4283d0320487",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FAnne%20Marie%20Speak%20your%20mind%2F16.%20Peak.mp3?alt=media&token=87633649-a4ca-42d0-aff7-5184565f5568",
+                "duration": 226
+        },
+        {
+                "title": "Rockabye",
+                "album": "615ea1e62c2e4283d0320487",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FAnne%20Marie%20Speak%20your%20mind%2F17.%20Rockabye%20(feat.%20Sean%20Paul%20%26%20Anne-Marie).mp3?alt=media&token=33597115-11fc-4377-9025-162e7578b50b",
+                "duration": 249
+        },
+
+
+
+
+
+
+        {
+                "title": "There is Nothing Holding Me Back",
+                "album": "615ea22e2c2e4283d0320497",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FIlluminate%20%E2%80%93%20Illuminate%20World%20Tour%20reissue%2FShawn_Mendes_-_Theres_Nothing_Holding_Me_Back.mp3?alt=media&token=d4c3eada-b4db-4bf2-b027-3205e94de63e",
+                "duration": 199
+        },
+
+
+        {
+                "title": "No Time To Die",
+                "album": "615ea2892c2e4283d032049f",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FNo%20time%20to%20die%2FBillie%20Eilish%20-%20No%20Time%20To%20Die.mp3?alt=media&token=14795e40-b330-4641-b55c-692a81c2998b",
+                "duration": 239
+        },
+
+        {
+                "title": "Ocean Eyes",
+                "album": "615ea2992c2e4283d03204a3",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FOcean%20eyes%2FBillie%20Eilish%20-%20Ocean%20Eyes%20(Official%20Music%20Video).mp3?alt=media&token=66c4c06a-9ac8-4fa6-a2ca-1ab4fe42fec3",
+                "duration": 200
+        },
+
+        {
+                "title": "Six Feet Under",
+                "album": "615ea2a72c2e4283d03204a7",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FSix%20feet%20under%2FBillie%20Eilish%20-%20Six%20Feet%20Under%20(Lyrics).mp3?alt=media&token=6e35bea8-05eb-463a-aa01-5166d2b7e1e5",
+                "duration": 187
+        },
+        {
+                "title": "Somebody Else",
+                "album": "615ea2b52c2e4283d03204ab",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FSomebody%20else%2FSomebody_else.mp3?alt=media&token=579e665b-f80a-47b2-92f2-5b9671d73db8",
+                "duration": 233
+        },
+        {
+                "title": "Lullaby of Woe",
+                "album": "615ea2db2c2e4283d03204b7",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FThe-Witcher-3-OST-Lullaby-of-Woe-A-Night-to-Remember-song.mp3?alt=media&token=83635739-49a2-4fac-8500-59229284b4d5",
+                "duration": 152
+        },
+
+
+
+
+        {
+                "title": "Don't Say a Word",
+                "album": "615ea21d2c2e4283d0320493",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FHalcyon%2F1.Ellie%20Goulding%20-%20Don't%20Say%20a%20Word.mp3?alt=media&token=3cf7cbe9-68b2-4b9d-9a52-49b489c724e7",
+                "duration": 247
+        },
+        {
+                "title": "My Blood",
+                "album": "615ea21d2c2e4283d0320493",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FHalcyon%2F2.My%20Blood.mp3?alt=media&token=81d3f28e-486c-4898-8c41-da754245072f",
+                "duration": 234
+        },
+        {
+                "title": "Anything Could Happen",
+                "album": "615ea21d2c2e4283d0320493",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FHalcyon%2F3.Ellie%20Goulding%20-%20Anything%20Could%20Happen%20(Official%20Video).mp3?alt=media&token=33030c41-86f5-4592-a2ea-2f6aeaf04c58",
+                "duration": 256
+        },
+        {
+                "title": "Only You",
+                "album": "615ea21d2c2e4283d0320493",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FHalcyon%2F4.Ellie%20Goulding%20-%20Only%20You.mp3?alt=media&token=621cab32-f853-4423-96db-f034b2b79f42",
+                "duration": 230
+        },
+        {
+                "title": "Halcyon",
+                "album": "615ea21d2c2e4283d0320493",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FHalcyon%2F5.Ellie%20Goulding%20-%20Halcyon-320k.mp3?alt=media&token=76cbeff9-3dd5-43e5-9c6f-3c9772355958",
+                "duration": 204
+        },
+        {
+                "title": "Figure 8",
+                "album": "615ea21d2c2e4283d0320493",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FHalcyon%2F6.Ellie%20Goulding%20-%20Figure%208%20(Official%20Video).mp3?alt=media&token=8ecccfd0-01cd-4286-898b-a6cde62e0233",
+                "duration": 243
+        },
+        {
+                "title": "Joy",
+                "album": "615ea21d2c2e4283d0320493",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FHalcyon%2F7.Ellie%20Goulding%20-%20Joy.mp3?alt=media&token=5dc7eb6e-b9eb-428a-ad85-7c806165b4a2",
+                "duration": 196
+        },
+        {
+                "title": "Hanging On",
+                "album": "615ea21d2c2e4283d0320493",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FHalcyon%2F8.Hanging%20On.mp3?alt=media&token=b2635767-143f-44b2-8bd1-09da72809193",
+                "duration": 201
+        },
+        {
+                "title": "Explosions",
+                "album": "615ea21d2c2e4283d0320493",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FHalcyon%2F9.Ellie%20Goulding%20-%20Explosions%20(Official%20Video).mp3?alt=media&token=6afa8727-a407-4533-82f4-15eb7555a933",
+                "duration": 240
+        },
+        {
+                "title": "I Know You Care",
+                "album": "615ea21d2c2e4283d0320493",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FHalcyon%2F10.Ellie%20Goulding%20-%20I%20Know%20You%20Care%20(Official%20Video).mp3?alt=media&token=e613a448-7965-4a8a-b260-2ab50c0b448c",
+                "duration": 207
+        },
+        {
+                "title": "Atlantis",
+                "album": "615ea21d2c2e4283d0320493",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FHalcyon%2F11.Ellie%20Goulding%20-%20Atlantis.mp3?alt=media&token=7b8532bb-8f26-4f07-a15b-da571fc158e4",
+                "duration": 241
+        },
+        {
+                "title": "Dead in the Water",
+                "album": "615ea21d2c2e4283d0320493",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FHalcyon%2F12.Ellie%20Goulding%20-%20Dead%20In%20the%20Water.mp3?alt=media&token=27a4c737-ed30-4a1a-b0ff-a96f3a0a9ade",
+                "duration": 283
+        },
+        {
+                "title": "I Need Your Love",
+                "album": "615ea21d2c2e4283d0320493",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FHalcyon%2F13.Calvin%20Harris%20-%20I%20Need%20Your%20Love%20(Official%20Video)%20ft.%20Ellie%20Goulding.mp3?alt=media&token=b7092a4d-ff32-4ac9-8ca3-31f1cd2b9f75",
+                "duration": 226
+        },
+        {
+                "title": "How Long will I Love You",
+                "album": "615ea21d2c2e4283d0320493",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2FHalcyon%2F14.Ellie%20Goulding%20-%20How%20Long%20Will%20I%20Love%20You%20(Official%20Video).mp3?alt=media&token=c50f347f-62cc-4d9d-b57b-708e7be80548",
+                "duration": 157
+        },
+
+
+
+
+        {
+                "title": "One",
+                "album": "615ea2cf2c2e4283d03204b3",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2Fx%20Deluxe%2F01%20One.mp3?alt=media&token=e3219e33-e6bd-489b-b448-f1dc261fcff9",
+                "duration": 252
+        },
+        {
+                "title": "I'm a Mess",
+                "album": "615ea2cf2c2e4283d03204b3",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2Fx%20Deluxe%2F02%20I'm%20a%20Mess.mp3?alt=media&token=191083a3-b78c-451b-b3b6-ada868fe747c",
+                "duration": 244
+        },
+        {
+                "title": "Sing",
+                "album": "615ea2cf2c2e4283d03204b3",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2Fx%20Deluxe%2F03%20Sing.mp3?alt=media&token=084dcfbe-bf05-4cdb-a518-dc6300b0985e",
+                "duration": 235
+        },
+        {
+                "title": "Don't",
+                "album": "615ea2cf2c2e4283d03204b3",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2Fx%20Deluxe%2F04%20Don't.mp3?alt=media&token=8ebd61f0-718a-44d2-9d06-0600776e96c3",
+                "duration": 219
+        },
+        {
+                "title": "Nina",
+                "album": "615ea2cf2c2e4283d03204b3",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2Fx%20Deluxe%2F05%20Nina.mp3?alt=media&token=bcbf6baf-31de-413c-8e9c-d500b44b3189",
+                "duration": 225
+        },
+        {
+                "title": "Photograph",
+                "album": "615ea2cf2c2e4283d03204b3",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2Fx%20Deluxe%2F06%20Photograph.mp3?alt=media&token=a972b338-22b6-4260-afb2-9b97dfc7c72e",
+                "duration": 259
+        },
+        {
+                "title": "Bloodstream",
+                "album": "615ea2cf2c2e4283d03204b3",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2Fx%20Deluxe%2F07%20Bloodstream.mp3?alt=media&token=2e426308-5270-4b0c-acef-fa7891c02316",
+                "duration": 300
+        },
+        {
+                "title": "Tenerife Sea",
+                "album": "615ea2cf2c2e4283d03204b3",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2Fx%20Deluxe%2F08%20Tenerife%20Sea.mp3?alt=media&token=a96bf2a4-d380-4d89-875d-678987e3ef38",
+                "duration": 241
+        },
+        {
+                "title": "Runaway",
+                "album": "615ea2cf2c2e4283d03204b3",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2Fx%20Deluxe%2F09%20Runaway.mp3?alt=media&token=04fb0fa9-1875-44f3-9c96-efbe1ca3ab5f",
+                "duration": 205
+        },
+        {
+                "title": "The Man",
+                "album": "615ea2cf2c2e4283d03204b3",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2Fx%20Deluxe%2F10%20The%20Man.mp3?alt=media&token=d5fe0f1f-442e-46d5-8344-ee6a5f1008f4",
+                "duration": 250
+        },
+        {
+                "title": "Thinking Out Loud",
+                "album": "615ea2cf2c2e4283d03204b3",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2Fx%20Deluxe%2F11%20Thinking%20Out%20Loud.mp3?alt=media&token=9de459d2-404e-44fc-93c7-3815104d8935",
+                "duration": 281
+        },
+        {
+                "title": "Afire Love",
+                "album": "615ea2cf2c2e4283d03204b3",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2Fx%20Deluxe%2F12%20Afire%20Love.mp3?alt=media&token=7fa4f032-f445-47e6-8888-9c29a0d65f6f",
+                "duration": 314
+        },
+        {
+                "title": "Take It Back",
+                "album": "615ea2cf2c2e4283d03204b3",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2Fx%20Deluxe%2F13%20Take%20It%20Back.mp3?alt=media&token=7ca96c19-64c0-4a49-8a2e-f04101dd31a5",
+                "duration": 208
+        },
+        {
+                "title": "Shirtsleeves",
+                "album": "615ea2cf2c2e4283d03204b3",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2Fx%20Deluxe%2F14%20Shirtsleeves.mp3?alt=media&token=e7d6c6ab-36d0-49c5-9f94-7488af8f8b65",
+                "duration": 190
+        },
+        {
+                "title": "Even My Dad Does Sometimes",
+                "album": "615ea2cf2c2e4283d03204b3",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2Fx%20Deluxe%2F15%20Even%20My%20Dad%20Does%20Sometimes.mp3?alt=media&token=0d0c1cdd-0733-4492-a701-9e2863744cae",
+                "duration": 228
+        },
+        {
+                "title": "I See Fire",
+                "album": "615ea2cf2c2e4283d03204b3",
+                "streamUrl": "https://firebasestorage.googleapis.com/v0/b/songbird-fed8a.appspot.com/o/Tracks%2Fx%20Deluxe%2F16%20I%20See%20Fire.mp3?alt=media&token=ceda02d7-5fbc-4862-a24e-df6ff5b7f33a",
+                "duration": 299
+        }
+
+
+
+
+
+
+
 
 
 ]

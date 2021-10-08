@@ -34,18 +34,20 @@ exports.getPlaylist = asyncHandler(async (req,res,next) =>{
 });
 
 exports.getPlaylists = asyncHandler(async (req,res,next) =>{
+
+  res.status(200).json(res.advancedResults);
   
-  const playlists = await Playlist.find().populate([{
-      path: 'tracks',
-      select : 'title streamUrl duration slug'
-  },
-  {
-      path: 'owner',
-      select : 'username'
-  }
-]);
+//   const playlists = await Playlist.find().populate([{
+//       path: 'tracks',
+//       select : 'title streamUrl duration slug'
+//   },
+//   {
+//       path: 'owner',
+//       select : 'username'
+//   }
+// ]);
     
-        res.status(200).json({success: true,count : playlists.length ,data: playlists});
+//         res.status(200).json({success: true,count : playlists.length ,data: playlists});
 });
 
 

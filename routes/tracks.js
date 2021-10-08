@@ -17,7 +17,7 @@ const Track = require('../models/trackModel');
 const router = express.Router({mergeParams: true});
 
 router.use(protect);
-router.route('/').get(advancedResults(Track),getTracks);
+router.route('/').get(getTracks);
 router.route('/likedsongs').get(getLikedTracks);
 router.route('/:id').get(getTrack);
 router.route('/liketrack/:id').put(likeTrack);
