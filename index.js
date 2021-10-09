@@ -15,7 +15,7 @@ dotenv.config({path : "./config/config.env"});
 
 const connectDB = require("./config/db"); 
 const authRoute = require("./routes/auth");
-const tracksRoute = require("./routes/tracks");
+const tracksRoute = require("./routes/tracks"); 
 const albumsRoute = require("./routes/albums");
 const artistsRoute = require("./routes/artists");
 const playlistsRoute = require("./routes/playlists");

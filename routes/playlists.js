@@ -8,7 +8,7 @@ const {
     updatePlaylist,
     deletePlaylist,
     addSongToPlaylist,
-    removeSongToPlaylist,
+    removeSongFromPlaylist,
     savePlaylist,
     removeSavedPlaylist,
     getSavedPlaylists,
@@ -43,7 +43,7 @@ router.get('/myplaylists', protect,getCreatedPlaylists);
 router.route('/:id').get(getPlaylist);
 router.put('/:id', protect,updatePlaylist);
 router.put('/addtoplaylist/:id', protect,addSongToPlaylist);
-router.put('/removefromplaylist/:id', protect,removeSongToPlaylist);
+router.put('/removefromplaylist/:id', protect,removeSongFromPlaylist);
 
 router.put('/saveplaylist/:id', protect,savePlaylist);
 router.put('/removeplaylistfromlibrary/:id', protect,removeSavedPlaylist);

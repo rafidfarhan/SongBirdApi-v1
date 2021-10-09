@@ -176,7 +176,7 @@ exports.updatePlaylist = asyncHandler(async (req, res, next) => {
    
   });
 
-  exports.removeSongToPlaylist = asyncHandler(async (req, res, next) => {
+  exports.removeSongFromPlaylist = asyncHandler(async (req, res, next) => {
     let playlist = await Playlist.findById(req.params.id);
   
     if (!playlist) {
@@ -258,7 +258,7 @@ exports.updatePlaylist = asyncHandler(async (req, res, next) => {
         return next(new ErrorResponse(`Problem with file upload`, 500));
       }
   
-      await Playlist.findByIdAndUpdate(req.user.id, { picture: file.name });
+      await Playlist.findByIdAndUpdate(req.params.id, { picture: file.name });
   
       res.status(200).json({
         success: true,
