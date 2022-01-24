@@ -18,6 +18,18 @@ const TrackSchema = new mongoose.Schema(
         ref:'Album',
         required: true
     },
+    albumName:{
+      type: String,
+      required: true,
+      min: 3,
+      max: 300
+    },
+    artistName:{
+      type: String,
+      required: true,
+      min: 3,
+      max: 300
+    },
     
     streamUrl:{
         type: String,
