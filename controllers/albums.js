@@ -18,7 +18,7 @@ exports.getAlbum = asyncHandler(async (req,res,next) =>{
     
         const album = await Album.findById(req.params.id).populate([{
             path: 'tracks',
-            select : 'title streamUrl duration slug'
+            select : 'title streamUrl duration albumName artistName slug'
         },
         {
             path: 'artists',

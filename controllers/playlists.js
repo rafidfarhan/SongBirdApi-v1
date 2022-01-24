@@ -18,7 +18,7 @@ exports.getPlaylist = asyncHandler(async (req,res,next) =>{
     
         const playlist = await Playlist.findById(req.params.id).populate([{
           path: 'tracks',
-          select : 'title streamUrl duration slug'
+          select : 'title streamUrl duration albumName artistName slug'
       },
       {
           path: 'owner',
