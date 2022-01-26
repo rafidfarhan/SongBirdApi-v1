@@ -337,8 +337,8 @@ exports.getSavedPlaylists= asyncHandler(async (req,res,next) =>{
   const playlists = await Promise.all(
       user.savedPlaylists.map((playlistId) => {
         return Playlist.findById(playlistId).populate([{
-          path: 'tracks',
-          select : 'title streamUrl duration slug'
+          path: 'owner',
+          select : 'username profilePicture'
       }
   ]);
       })
@@ -351,7 +351,13 @@ exports.getSavedPlaylists= asyncHandler(async (req,res,next) =>{
 
 exports.getCreatedPlaylists= asyncHandler(async (req,res,next) =>{
 
-  const playlists = req.user.createdPlaylists;
+  const playlists = await Playlist.find({owner: req.user.id}).populate([
+{
+    path: 'owner',
+    select : 'username profilePicture'
+}
+]);
+  // const playlists = req.user.createdPlaylists;
   res.status(200).json({success: true, data: playlists});
   
 });

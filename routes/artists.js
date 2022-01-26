@@ -1,5 +1,5 @@
 const express = require("express");
-const {getArtist,getArtists, createArtist,updateArtist,deleteArtist,followArtist,unfollowArtist } = require("../controllers/artists");
+const {getArtist,getArtists, createArtist,updateArtist,deleteArtist,followArtist,unfollowArtist, getFollowedArtists } = require("../controllers/artists");
 
 const advancedResults = require('../middleware/advancedResults');
 const { protect, authorize } = require('../middleware/auth');
@@ -14,6 +14,7 @@ router.route('/').get(advancedResults(Artist,[{
     select : 'title albumType artists genre albumUrl releaseDate slug'
 }
 ]),getArtists);
+router.route('/followedartists').get(getFollowedArtists);
 router.route('/:id').get(getArtist);
 router.route('/:id/follow').put(followArtist);
 router.route('/:id/unfollow').put(unfollowArtist);

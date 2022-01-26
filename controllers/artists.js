@@ -31,6 +31,23 @@ exports.getArtists = asyncHandler(async (req,res,next) =>{
     res.status(200).json(res.advancedResults);
 });
 
+exports.getFollowedArtists = asyncHandler(async (req,res,next) =>{
+    const user = req.user;
+    const artists = await Promise.all(
+        user.following.map((artistId) => {
+          return Artist.findById(artistId).populate([{
+            path: 'albums',
+            select : 'title albumType genre albumArtUrl releaseDate slug'
+        }
+    ]);
+        })
+      );
+    
+
+    res.status(200).json({success: true, data: artists});
+    
+});
+
 
 exports.updateArtist = asyncHandler(async (req,res,next) =>{
   

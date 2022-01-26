@@ -69,6 +69,7 @@ const ArtistSchema = new mongoose.Schema(
     toObject: {virtuals :true}
   });
 
+
 ArtistSchema.pre('save',function(next) {
   this.slug = slugify(this.name,{lower:true});
   next();
